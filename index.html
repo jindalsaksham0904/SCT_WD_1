@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streakly | Make your streak impossible to ignore.</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-wrap" aria-label="Streakly Home">
+        <div class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="4.5" height="4.5" style="fill: var(--signal); opacity: 0.4;" />
+            <rect x="5.5" y="0" width="4.5" height="4.5" style="fill: var(--signal); opacity: 1;" />
+            <rect x="0" y="5.5" width="4.5" height="4.5" style="fill: var(--signal); opacity: 0.7;" />
+            <rect x="5.5" y="5.5" width="4.5" height="4.5" style="fill: var(--signal); opacity: 0.9;" />
+          </svg>
+        </div>
+        Streakly
+      </a>
+      
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      
+      <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-scrim"></div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-eyebrow">For anyone trying to build a habit that sticks</span>
+          <h1>
+            Make your streak <span class="emphasis-wrap">impossible<svg viewBox="0 0 180 20" preserveAspectRatio="none"><path class="draw-line" d="M3,15 Q50,5 90,13 T177,10"></path></svg></span> to ignore.
+          </h1>
+          <p>Streakly tracks your daily habits in one place &mdash; so "I'll do it tomorrow" becomes a graph you don't want to break.</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary">Start Tracking</a>
+            <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Spark Glyph for Beat 2 -->
+          <svg class="spark-glyph" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L15 10L22 12L15 14L12 22L9 14L2 12L9 10L12 2Z" fill="currentColor"/>
+          </svg>
+          
+          <div class="heatmap-grid">
+            <!-- JS will populate the 7x20 grid here with <button> elements -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Motif: Section Divider -->
+    <div class="section-divider" aria-hidden="true">
+      <div class="motif-square"></div><div class="motif-square"></div><div class="motif-square"></div>
+      <div class="motif-square"></div><div class="motif-square"></div><div class="motif-square"></div>
+      <div class="motif-square"></div><div class="motif-square"></div><div class="motif-square"></div>
+      <div class="motif-square"></div><div class="motif-square"></div><div class="motif-square"></div>
+      <div class="motif-square"></div><div class="motif-square"></div>
+    </div>
+
+    <!-- Stats Ticker -->
+    <!-- Placeholder sample data below -->
+    <section class="stats-ticker">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <span class="stat-number">12,400</span>
+          <span class="stat-label">habits tracked</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">89%</span>
+          <span class="stat-label">weekly consistency</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">4.8</span>
+          <span class="stat-label">average rating</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">30</span>
+          <span class="stat-label">day average streak</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Motif: Section Divider -->
+    <div class="section-divider" aria-hidden="true">
+      <div class="motif-square"></div><div class="motif-square"></div><div class="motif-square"></div>
+      <div class="motif-square"></div><div class="motif-square"></div><div class="motif-square"></div>
+      <div class="motif-square"></div><div class="motif-square"></div><div class="motif-square"></div>
+      <div class="motif-square"></div><div class="motif-square"></div><div class="motif-square"></div>
+      <div class="motif-square"></div><div class="motif-square"></div>
+    </div>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+      <div class="container">
+        <header class="section-header">
+          <h2>How Streakly Works</h2>
+        </header>
+        
+        <div class="steps-list">
+          <div class="step-row">
+            <div class="step-badge">00</div>
+            <div class="step-content">
+              <h3>Pick your habits</h3>
+              <p>reading, workouts, meditation, anything you want to stick to</p>
+            </div>
+          </div>
+          
+          <div class="step-row">
+            <div class="step-badge">01</div>
+            <div class="step-content">
+              <h3>Check in daily</h3>
+              <p>one tap, takes five seconds</p>
+            </div>
+          </div>
+          
+          <div class="step-row">
+            <div class="step-badge">02</div>
+            <div class="step-content">
+              <h3>Build your streak</h3>
+              <p>watch the grid fill in</p>
+            </div>
+          </div>
+          
+          <div class="step-row">
+            <div class="step-badge">03</div>
+            <div class="step-content">
+              <h3>See your consistency</h3>
+              <p>not just a checklist, a record</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+      <div class="container">
+        <div class="testimonial-card">
+          <!-- Motif: Corner Cluster -->
+          <div class="corner-cluster" aria-hidden="true">
+            <div></div><div></div><div></div><div></div>
+          </div>
+          
+          <!-- PLACEHOLDER: swap for a real user quote once available -->
+          <blockquote class="testimonial-quote">
+            "I stopped 'starting over' every Monday. Seeing the streak made skipping a day feel like breaking something I'd built."
+          </blockquote>
+          <div class="testimonial-author">&mdash; Beta tester</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Band -->
+    <section class="cta-band">
+      <div class="container">
+        <h2>Your streak starts today.</h2>
+        <a href="contact.html" class="btn btn-primary">Start Tracking</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo-area">
+          <a href="index.html" class="logo-wrap" aria-label="Streakly Home">
+            Streakly
+          </a>
+          <div class="footer-grid-echo" aria-hidden="true">
+            <div></div><div></div><div></div><div></div>
+          </div>
+        </div>
+        
+        <nav class="footer-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="footer-social">
+          <!-- Generic social icon placeholders -->
+          <a href="#" class="social-icon" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5c-2.347 0-4.25 1.903-4.25 4.25v8.5c0 2.347 1.903 4.25 4.25 4.25h8.5c2.347 0 4.25-1.903 4.25-4.25v-8.5c0-2.347-1.903-4.25-4.25-4.25h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm4.75-2a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Streakly.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
